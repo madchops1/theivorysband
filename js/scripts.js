@@ -105,6 +105,7 @@
 				
 			}
 			
+B
 			$(window).resize(function() {
 				
 				windowWidth = $(this).width();
@@ -180,6 +181,10 @@
 })(jQuery);
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fb6cf43fddc0c2c8d89a18f9149501003ced5fac
 /**
 * hoverIntent r5 // 2007.03.27 // jQuery 1.1.2+
 * <http://cherne.net/brian/resources/jquery.hoverIntent.html>
