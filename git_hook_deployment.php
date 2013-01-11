@@ -23,5 +23,7 @@ if($_POST['payload']){
   
   // Send
   mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
+  
+  echo $message;
 }
 ?>
