@@ -7,7 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
 		<!-- title of the page -->
-		<title>The Ivorys Official Website - TEST CHANGE 00000030</title>
+		<title>The Ivorys Official Website - TEST CHANGE 00000040</title>
 		
 		
 		<!-- test change -->
