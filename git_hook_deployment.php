@@ -15,6 +15,6 @@ if($_POST['payload']){
   $message = wordwrap($message, 70, "\r\n");
   
   // Send
-  @mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
+  mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
 }
 ?>
