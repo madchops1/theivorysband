@@ -20,6 +20,9 @@
   // Send
   mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
   
-  echo $output;
+  echo "<pre>";
+  echo var_dump($output);
+  echo "</pre>";
+  
 //}
 ?>
