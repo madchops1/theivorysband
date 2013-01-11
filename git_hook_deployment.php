@@ -2,7 +2,7 @@
 //if(isset($_POST['payload'])){
   
   $output = array();
-  exec('sudo cd /home/theivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master',$output);
+  exec('sudo cd /home/theivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master',$output,$return);
   
   // The message
   $message = "  Codebase deployed to TheIvorysBand.com \r\n
@@ -19,6 +19,12 @@
   
   // Send
   mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
+  
+  echo $message;
+  echo "<br><br>";
+  
+  echo "RETURN: ".$return."";
+  echo "<br><br>";
   
   echo "<pre>";
   echo var_dump($output);
