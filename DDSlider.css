@@ -1,0 +1,116 @@
+
+
+
+	/*------------------------
+	---------------- CONTENT
+	------------------------*/
+	
+	/* You might want to change these options for the main container */
+	.portfolio_images {
+		
+		float: left;
+		height: 300px;
+		width: 570px;
+		
+	}
+	
+	/* images container - This is the most important container - Don't change important properties */
+	.portfolio_images {
+		
+		list-style: none !important;
+		margin: 0 !important;
+		overflow: hidden !important;
+		position: relative !important;
+		
+	}
+
+		/* each slider item - Nothing to change here */
+		.portfolio_images li {
+			
+			display: none;
+			float: left;
+			margin: 0;
+			position: absolute;
+			width: 100%;
+			
+		}
+		
+		/* Don't edit this part */
+		.portfolio_images li.current {
+			
+			display: block;
+			z-index: 2 !important;
+			
+		}
+		
+		/* Don't edit this part */
+		.portfolio_images li.next {
+			
+			display: block;
+			z-index: 1 !important;
+			
+		}
+		
+		/* Don't edit this part - prevents inline lists from being hidden */
+		.portfolio_images li ul li {
+			
+			display: block !important;
+			position: relative !important;
+			
+		}
+
+
+
+/* You might want to change these options for the main container */
+	.portfolio_images2 {
+		
+		float: left;
+		height: 300px;
+		width: 570px;
+		
+	}
+	
+	/* images container - This is the most important container - Don't change important properties */
+	.portfolio_images2 {
+		
+		list-style: none !important;
+		margin: 0 !important;
+		overflow: hidden !important;
+		position: relative !important;
+		
+	}
+
+		/* each slider item - Nothing to change here */
+		.portfolio_images2 li {
+			
+			display: none;
+			float: left;
+			margin: 0;
+			position: absolute;
+			width: 100%;
+			
+		}
+		
+		/* Don't edit this part */
+		.portfolio_images2 li.current {
+			
+			display: block;
+			z-index: 2 !important;
+			
+		}
+		
+		/* Don't edit this part */
+		.portfolio_images2 li.next {
+			
+			display: block;
+			z-index: 1 !important;
+			
+		}
+		
+		/* Don't edit this part - prevents inline lists from being hidden */
+		.portfolio_images2 li ul li {
+			
+			display: block !important;
+			position: relative !important;
+			
+		}

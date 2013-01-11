@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+body {
+	
+	/*background: url(images/classic/bg.gif) fixed;*/
+	background: url(images/ivorysbg2.jpg) fixed;
+	color: #534a41;
+	
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	
+	color: #2e2a2b;
+	
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, a {
+	
+	
+	color: #006F41;
+	
+	
+	
+}
+
+
+
+
+
+/* ------------------------
+------------- FIXED CONTENT
+-------------------------*/
+		
+	#hide-fixed , #show-fixed{
+		
+		background: url(images/classic/hide.png) no-repeat center center;
+		
+	}
+	
+	#hide-fixed:hover {
+		
+		background: url(images/classic/hide_hover.png) no-repeat center center;
+		
+	}
+	
+	#show-fixed {
+		
+		background: url(images/classic/show.png) no-repeat center center;
+		
+	}
+	
+	#show-fixed:hover {
+		
+		background: url(images/classic/show_hover.png) no-repeat center center;
+		
+	}
+
+#top_menu {
+	
+	background: #2e2a2b;
+	
+}
+
+	#top_menu .menu li {
+		
+		float: left;
+		margin-right: 30px;
+		width: auto;
+		
+	}
+	
+	#top_menu .menu li.current a {
+		
+		color: #f0efea;
+		
+	}
+	
+	#top_menu_bg {
+		background: url(images/ivorysbg2.jpg) fixed;
+		/*background: url(images/classic/top_menu_bg.png);*/
+		
+	}
+		
+		.menu li a {
+			
+			color: #908b8e;
+			
+		}
+		
+		.menu li a:hover, .menu li.current a:hover, .menu li.hover a  {
+			
+			color: #006F41;
+			
+		}
+		
+		.menu li.current a {
+			
+			color: #2e2a2b;
+			
+		}
+	
+	#logo a {
+		
+		background: url(images/classic/logo.png) no-repeat top left;
+		
+	}
+	
+	#logo a:hover {
+	
+		background: url(images/classic/logo_hover.png) no-repeat top left;
+	
+	}
+		
+		
+		
+		
+/* ------------------------
+------------- SHOWCASE
+-------------------------*/
+
+#showcase {
+	
+	/*background: url(images/classic/showcase_border.png) repeat-y top right;*/
+	background:#fff;
+	border-right:1px solid #666;
+}
+	
+	.showcase_item div.hidden {
+		
+		background: url(images/classic/bg_med.gif);
+		
+	}
+	
+#showcase_arrow_up, .up_arrow {
+	
+	background: url(images/classic/showcase_arrow_top.png) no-repeat center center;
+	
+}
+
+#showcase_arrow_down, .down_arrow {
+	
+	background: url(images/classic/showcase_arrow_bottom.png) no-repeat center center;
+	
+}
+
+	#showcase_arrow_up:hover, .up_arrow:hover {
+		
+		background: url(images/classic/showcase_arrow_top_hover.png) no-repeat center center;
+		
+	}
+
+	#showcase_arrow_down:hover, .down_arrow:hover {
+		
+		background: url(images/classic/showcase_arrow_bottom_hover.png) no-repeat center center;
+		
+	}
+		
+		
+		
+		
+/* ------------------------
+------------- CONTENT
+-------------------------*/
+
+
+
+	
+	
+	
+	/* ------------------------
+	------------- TOP INFO
+	-------------------------*/
+	
+	#top_info {
+		
+		/*background: url(images/classic/bg_med.gif);*/
+		
+	}
+	
+	#top_info_bg_bottom {
+		
+		/*background: url(images/classic/bg_top_info.gif) repeat-x bottom left;*/
+		
+	}
+
+	
+	
+	
+	/* ------------------------
+	------------- POST
+	-------------------------*/
+	
+	.title {
+		
+		border-bottom: 1px dotted #c1b2a4;
+		
+	}
+	
+	#top_info {
+		
+		margin: 0 0 50px 0;
+		padding-bottom: 10px;
+		
+	}
+	
+	#top_info p {
+		
+		line-height: 21px;
+		
+	}
+
+	
+	
+	
+	/* ------------------------
+	------------- POST
+	-------------------------*/
+	
+	.post_item {
+		
+		margin: 0 0 50px 0;
+		
+	}
+	
+	.comments {
+		
+		background: url(images/classic/comment_balloon.gif) no-repeat top left;
+		
+	}
+	
+	.comments a {
+		
+		color: #2e2a2b;
+		
+	}
+	
+	.more, .minus {
+		
+		background: url(images/classic/more.png) no-repeat center center;
+		border-right: 1px dotted #c1b2a4;
+		
+	}
+	
+	.minus {
+		
+		background: url(images/classic/minus.png) no-repeat center center;
+		
+	}
+	
+	.minus:hover {
+		
+		background: url(images/classic/minus_hover.png) no-repeat center center !important;
+		
+	}
+	
+	.more:hover {
+		
+		background: url(images/classic/more_hover.png) no-repeat center center;
+		
+	}
+	
+	.date, .categories {
+		
+		border-left: 1px dotted #c1b2a4;
+		color: #2e2a2b;
+		
+	}
+	
+	.categories a {
+		
+		color: #2e2a2b;
+		
+	}
+	
+	.categories a:hover {
+		
+		color: #006F41;
+		
+	}
+	
+	.date span, .categories span {
+		
+		color: #c1b2a4;
+		
+	}
+
+	
+	
+	
+	/* ------------------------
+	------------- PAGINATION
+	-------------------------*/
+	
+	#pagination {
+		
+		border-top: 1px dotted #c2b2a5;
+		
+	}
+		
+		#pagination ul li {
+			
+			border-right: 1px dotted #c2b2a5;
+			
+		}
+		
+			#pagination ul li a {
+				
+				color: #2c2b27;
+				
+			}
+			
+			#pagination ul li.current a {
+				
+				background: url(images/classic/bg_med.gif);
+				
+			}
+			
+			#pagination ul li a:hover {
+				
+				color: #d62539;
+				
+			}
+			
+
+
+
+		
+/* ------------------------
+------------- FOOTER
+-------------------------*/
+
+#footer_bg_top {
+	
+	background: url(images/classic/bg_footer.gif) repeat-x bottom left;
+	
+}
+
+#footer {
+	
+	background: url(images/classic/bg_med.gif);
+	
+}
+	
+	#recent_comments ul li {
+		
+		background: url(images/classic/recent_comments.png) no-repeat top left;
+		
+	}
+			
+
+
+
+		
+/* ------------------------
+------------- COPYRIGHT
+-------------------------*/
+
+#copyright {
+	
+	background: #2e2a2b;
+	color: #f0efea;
+	
+}
+
+#copyright_bg_top {
+	
+	background: url(images/classic/bg_copyright.gif) repeat-x bottom left;
+	
+}
+
+
+
+
+/*------------------------
+---------------- FORMS
+------------------------*/
+
+input, textarea, select {
+	
+	background: url(images/classic/input_bg.gif);
+	
+}
+
+input.submit, input.reset {
+	
+	background: url(images/classic/submit_bg.gif);
+	color: #ffffff;
+	
+}
+
+
+		
+		
+/* ------------------------
+------------- COMMENTS
+-------------------------*/
+	
+	#comments ol li p.content {
+		
+		background: url(images/classic/bg_med.gif);
+		border: 1px solid #c0b3a2;
+		
+	}
+	
+	#comments .comment_author {
+		
+		background: url(images/icons/author_icon.png) no-repeat center left;
+		
+	}
+	
+	#comments .comment_date {
+		
+		background: url(images/icons/comment_date.png) no-repeat center left;
+		
+	}
+	
+	#comments .comment_reply {
+		
+		background: url(images/icons/comment_reply.png) no-repeat center left;
+		
+	}
+	
+	#comments .comment_time {
+		
+		background: url(images/icons/comment_time.png) no-repeat center left;
+		
+	}
+	
+	.comment_image {
+		
+		border: none !important;
+		
+	}
+	
+		#comments ol li ol {
+			
+			border: 1px dashed #c0b3a2;
+			border-top: none;
+			
+		}
+		
+
+
+.text-logo{
+	font-size:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+	float:left;
+}
