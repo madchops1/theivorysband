@@ -12,10 +12,6 @@
                 --------------------------------------------------
                 \r\n
                 ".$POST['payload']."\r\n
-                \r\n
-                --------------------------------------------------
-                \r\n
-                ".$output."\r\n
                 \r\n";
 
   // In case any of our lines are larger than 70 characters, we should use wordwrap()
@@ -24,6 +20,6 @@
   // Send
   mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
   
-  echo $message;
+  echo $output;
 //}
 ?>
