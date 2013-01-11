@@ -1,0 +1,70 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-----  CSS RESET  -----
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+* { margin: 0; padding: 0; border: none; }
+ul { list-style: circle; }
+form { display: block; }
+p, pre,
+blockquote, ul, ol, dl, address { font-weight: normal; }
+pre, blockquote, ul, ol, dl, address { margin: 0 0 2em 0; }
+p { margin: 0 0 1.5em 0; }
+xmp { padding: 15px; }
+cite, em, dfn { font-style: italic; }
+sup { position: relative; bottom: 0.3em; vertical-align: baseline; }
+sub { position: relative; bottom: -0.2em; vertical-align: baseline; }
+li, dd, blockquote { margin-left: 1em; }
+li { margin-bottom: 5px; }
+code, kbd, samp, pre, tt, var, textarea { font-size: 100%; font-family: monaco, "Lucida Console", courier, mono-space; }
+del { text-decoration: line-through; }
+ins, dfn { border-bottom: 1px solid #ccc; }
+small, sup, sub { font-size: 85%; }
+abbr, acronym { text-transform: uppercase; font-size: 85%; letter-spacing: .1em; border-bottom-style: dotted; border-bottom-width: 1px; }
+a abbr, a acronym { border: none; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+
+h1 { font-size: 3em; margin-bottom: 0.3em; line-height: 1.1em; }
+h2 { font-size: 2.5em; margin-bottom: 0.3em; line-height: 1.1em; }
+h3 { font-size: 2.0em; margin-bottom: 0.3em; line-height: 1.1em; }
+h4 { font-size: 1.7em; margin-bottom: 0.3em; line-height: 1.1em; }
+h5 { font-size: 1.4em; margin-bottom: 0.3em; line-height: 1.1em; }
+h6 { font-size: 1.2em; margin-bottom: 0.3em; line-height: 1.1em; }
+
+a, a:link, a:visited, a:hover, a:active { text-decoration: none; }
+a img { border: none; text-decoration: none; }
+
+img { border: none; text-decoration: none; }
+
+label, button {	cursor: pointer; }
+fieldset { border: none; }
+
+.left { float: left; }
+.right { float: right; }
+
+img.alignleft { margin: 0 15px 0 0; float: left; }
+img.alignright { margin: 0 0 0 15px; float: right; }
+
+.no_margin { margin: 0 !important; }
+
+.hidden { display: none; }
+
+/* ------------------------
+------------- LISTS
+-------------------------*/
+
+.bullet-tick { list-style-image: url(images/icons/bullet-tick.png); }
+.bullet-BW { list-style-image: url(images/icons/BandW.png); }
+.bullet-arrow { list-style-image: url(images/icons/bullet_arrow.png); }
+.bullet-hot { list-style-image: url(images/icons/bullet_flame.png); }
+.bullet-star { list-style-image: url(images/icons/bullet_star.png); }
+.bullet-clip { list-style-image: url(images/icons/bullet-paper-clip.png); }
+.bullet-black { list-style-image: url(images/icons/bullet_black.png); }
+.bullet-blue { list-style-image: url(images/icons/bullet_blue.png); }
+.bullet-green { list-style-image: url(images/icons/bullet_green.png); }
+.bullet-orange { list-style-image: url(images/icons/bullet_orange.png); }
+.bullet-pink { list-style-image: url(images/icons/bullet_pink.png); }
+.bullet-purple{ list-style-image: url(images/icons/bullet_purple.png); }
+.bullet-red{ list-style-image: url(images/icons/bullet_red.png); }
+.bullet-yellow{ list-style-image: url(images/icons/bullet_yellow.png); }
+.bullet-none { list-style:none; }
