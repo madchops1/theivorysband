@@ -1,6 +1,8 @@
 <?php
 if($_POST['payload']){
-  shell_exec('sudo cd /home/theivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master');
+  
+  $output = array();
+  exec('sudo cd /home/theivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master',$output);
   
   // The message
   $message = "  Codebase deployed to TheIvorysBand.com \r\n
@@ -9,7 +11,12 @@ if($_POST['payload']){
                 \r\n
                 --------------------------------------------------
                 \r\n
-                ".$POST['payload']."\r\n";
+                ".$POST['payload']."\r\n
+                \r\n
+                --------------------------------------------------
+                \r\n
+                ".$output."\r\n
+                \r\n";
 
   // In case any of our lines are larger than 70 characters, we should use wordwrap()
   $message = wordwrap($message, 70, "\r\n");
