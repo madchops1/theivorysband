@@ -1,0 +1,38 @@
+# DEFAULT SETTINGS
+##############################################
+
+Options +ExecCGI -Indexes
+Options +FollowSymlinks
+
+RewriteEngine on
+rewritecond %{http_host} ^theivorysband.com [nc]
+rewriterule ^(.*)$ http://www.theivorysband.com/$1 [r=301,nc]
+
+### DEFAULTS ###
+ServerSignature Off
+AddType video/x-flv .flv
+AddType application/x-shockwave-flash .swf
+AddType image/x-icon .ico
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+SetEnv TZ America/Chicago
+SetEnv SERVER_ADMIN karl@webksd.com
+
+# secure htaccess file
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+# disable directory browsing
+Options All -Indexes
+
+AddType application/x-httpd-php .html .htm .inc
+AddHandler application/x-httpd-php .html .htm .inc
+
+# serve custom error pages
+ErrorDocument 400 http://theivorysband.com
+ErrorDocument 401 http://theivorysband.com
+ErrorDocument 403 http://theivorysband.com
+ErrorDocument 404 http://theivorysband.com
+ErrorDocument 500 http://theivorysband.com
