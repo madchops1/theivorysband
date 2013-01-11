@@ -3,7 +3,7 @@
   
   $output = array();
   //exec('sudo cd /home/theivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master',$output,$return);
-  `sudo cd /home/theivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
+  `sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
   // The message
   $message = "  Codebase deployed to TheIvorysBand.com \r\n
                 Date:".date("m/d/Y h:i:s A")."\r\n
