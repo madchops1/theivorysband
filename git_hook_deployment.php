@@ -1,5 +1,5 @@
 <?php
-if($_POST['payload']){
+//if(isset($_POST['payload'])){
   
   $output = array();
   exec('sudo cd /home/theivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master',$output);
@@ -25,5 +25,5 @@ if($_POST['payload']){
   mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
   
   echo $message;
-}
+//}
 ?>
