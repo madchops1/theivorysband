@@ -6,41 +6,31 @@
    * the apache user should be able to pull from git!
    */
 
-  function sendSuccessMessage(){
+  function sendMessage($output){
     global $_POST;
-    $message = "  Codebase deployed to TheIvorysBand.com \r\n
+    $message = "  TheIvorysBand.com Deployment Report \r\n
                   Date:".date("m/d/Y h:i:s A")."\r\n
-                  Status: Successfull\r\n
                   --------------------------------------------------
-                  ".$_POST['payload']."\r\n
+                  ".$output."\r\n
                   \r\n";
         $message = wordwrap($message, 70, "\r\n");
-    @mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
+    @mail('karl@webksd.com', 'TheIvorysBand.com Deployment Report '.date("m/d/Y h:i:s A").'', $message);
     die();
   }
 
-  function sendFailureMessage(){
-    global $_POST;
-    $message = "  Codebase not Deployed \r\n
-                  Date:".date("m/d/Y h:i:s A")."\r\n
-                  Status: Failure\r\n
-                  --------------------------------------------------
-                  ".$_POST['payload']."\r\n
-                  \r\n";
-    $message = wordwrap($message, 70, "\r\n");
-    @mail('karl@webksd.com', 'TheIvorysBand.com Deployment Failure '.date("m/d/Y h:i:s A").'', $message);
-    die();
-  }
+ 
   
   //$output = array();
   //exec('git pull origin master',$output,$return);
   //echo passthru('git pull origin master',$return);
   $return = shell_exec('git pull origin master 2>&1');
   echo "<pre>$return</pre>";
+  $return = shell_exec('git reset --hard HEAD && git pull origin master 2>&1');
+  //echo "<pre>$return</pre>";
   //$output = shell_exec('git pull origin master');
   
   //exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMessage();
-  //sendSuccessMessage();
+  sendMessage($output);
   //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
   
 
