@@ -1,8 +1,13 @@
 <?php
 //if(isset($_POST['payload'])){
   
+  /* I have given the apache user on the server an ssh key pair for git
+   * The .git directory in /ivorys1/public_html/ is chmoded to 0777 so 
+   * the apache user should be able to pull from git!
+   */
+
   $output = array();
-  exec('sudo cd /home/ivorys1/public_html/ && sudo git pull origin master',$output,$return);
+  exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return);
   //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
   // The message
   $message = "  Codebase deployed to TheIvorysBand.com \r\n
