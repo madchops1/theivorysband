@@ -2,15 +2,13 @@
 //if(isset($_POST['payload'])){
   
   $output = array();
-  exec('sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master',$output,$return);
+  exec('sudo cd /home/ivorys1/public_html/ && sudo git pull origin master',$output,$return);
   //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
   // The message
   $message = "  Codebase deployed to TheIvorysBand.com \r\n
                 Date:".date("m/d/Y h:i:s A")."\r\n
                 Status: Successfull\r\n
-                \r\n
                 --------------------------------------------------
-                \r\n
                 ".$POST['payload']."\r\n
                 \r\n";
 
