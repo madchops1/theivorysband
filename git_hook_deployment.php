@@ -33,8 +33,9 @@
   }
   
   $output = array();
-  exec('git pull origin master',$output,$return);
-
+  //exec('git pull origin master',$output,$return);
+  passthru('git pull origin master',$output,$return);
+  
   //$output = shell_exec('git pull origin master');
   
   //exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMessage();
