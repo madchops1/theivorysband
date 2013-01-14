@@ -6,23 +6,36 @@
    * the apache user should be able to pull from git!
    */
 
-  $output = array();
-  exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return);
-  //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
-  // The message
-  $message = "  Codebase deployed to TheIvorysBand.com \r\n
-                Date:".date("m/d/Y h:i:s A")."\r\n
-                Status: Successfull\r\n
-                --------------------------------------------------
-                ".$POST['payload']."\r\n
-                \r\n";
+  function sendSuccessMessage(){
+    $message = "  Codebase deployed to TheIvorysBand.com \r\n
+                  Date:".date("m/d/Y h:i:s A")."\r\n
+                  Status: Successfull\r\n
+                  --------------------------------------------------
+                  ".$POST['payload']."\r\n
+                  \r\n";
+        $message = wordwrap($message, 70, "\r\n");
+    @mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
+    die();
+  }
 
-  // In case any of our lines are larger than 70 characters, we should use wordwrap()
-  $message = wordwrap($message, 70, "\r\n");
+  function sendFailureMessage(){
+    $message = "  Codebase not Deployed \r\n
+                  Date:".date("m/d/Y h:i:s A")."\r\n
+                  Status: Failure\r\n
+                  --------------------------------------------------
+                  ".$POST['payload']."\r\n
+                  \r\n";
+    $message = wordwrap($message, 70, "\r\n");
+    @mail('karl@webksd.com', 'TheIvorysBand.com Deployment Failure '.date("m/d/Y h:i:s A").'', $message);
+    die();
+  }
   
-  // Send
-  @mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
+  $output = array();
+  exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMesage();
+  sendSuccessMessage();
+  //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
   
+/* 
   echo $message;
   echo "<br><br>";
   
@@ -32,6 +45,6 @@
   echo "<pre>";
   echo var_dump($output);
   echo "</pre>";
-  
+*/
 //}
 ?>
