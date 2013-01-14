@@ -7,11 +7,12 @@
    */
 
   function sendSuccessMessage(){
+    global $_POST;
     $message = "  Codebase deployed to TheIvorysBand.com \r\n
                   Date:".date("m/d/Y h:i:s A")."\r\n
                   Status: Successfull\r\n
                   --------------------------------------------------
-                  ".$POST['payload']."\r\n
+                  ".$_POST['payload']."\r\n
                   \r\n";
         $message = wordwrap($message, 70, "\r\n");
     @mail('karl@webksd.com', 'TheIvorysBand.com Deployed Successfully '.date("m/d/Y h:i:s A").'', $message);
@@ -19,11 +20,12 @@
   }
 
   function sendFailureMessage(){
+    global $_POST;
     $message = "  Codebase not Deployed \r\n
                   Date:".date("m/d/Y h:i:s A")."\r\n
                   Status: Failure\r\n
                   --------------------------------------------------
-                  ".$POST['payload']."\r\n
+                  ".$_POST['payload']."\r\n
                   \r\n";
     $message = wordwrap($message, 70, "\r\n");
     @mail('karl@webksd.com', 'TheIvorysBand.com Deployment Failure '.date("m/d/Y h:i:s A").'', $message);
