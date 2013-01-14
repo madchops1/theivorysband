@@ -15,6 +15,7 @@
                   \r\n";
         $message = wordwrap($message, 70, "\r\n");
     @mail('karl@webksd.com', 'TheIvorysBand.com Deployment Report '.date("m/d/Y h:i:s A").'', $message);
+    @mail("6302175813@txt.att.net",$subject,$message,"From: deployment@theivorysband.com");
     die();
   }
 
