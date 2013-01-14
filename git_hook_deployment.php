@@ -8,11 +8,10 @@
 
   function sendMessage($output){
     global $_POST;
-    $message = "  TheIvorysBand.com Deployment Report \r\n
-                  Date:".date("m/d/Y h:i:s A")."\r\n
-                  --------------------------------------------------
-                  ".$output."\r\n
-                  \r\n";
+    $message = "TheIvorysBand.com Deployment Report
+            Date:".date("m/d/Y h:i:s A")."
+            --------------------------------------------------
+            ".$output."";
         $message = wordwrap($message, 70, "\r\n");
     @mail('karl@webksd.com', 'TheIvorysBand.com Deployment Report '.date("m/d/Y h:i:s A").'', $message);
     @mail("6302175813@txt.att.net",$subject,$message,"From: deployment@theivorysband.com");
