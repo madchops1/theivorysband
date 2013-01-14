@@ -7,7 +7,6 @@
    */
 
   function sendMessage($output){
-    global $_POST;
     $message = "TheIvorysBand.com Deployment Report
             Date:".date("m/d/Y h:i:s A")."
             --------------------------------------------------
@@ -15,7 +14,6 @@
         $message = wordwrap($message, 70, "\r\n");
     @mail('karl@webksd.com', 'TheIvorysBand.com Deployment Report '.date("m/d/Y h:i:s A").'', $message);
     @mail("6302175813@txt.att.net",$subject,$message,"From: deployment@theivorysband.com");
-    die();
   }
 
  
@@ -24,8 +22,8 @@
   //exec('git pull origin master',$output,$return);
   //echo passthru('git pull origin master',$return);
   //$return = shell_exec('git pull origin master 2>&1');
-  shell_exec('git reset --hard HEAD &&');
-  sleep(5);
+  //shell_exec('git reset --hard HEAD');
+  //sleep(5);
   $return = shell_exec('git pull origin master 2>&1');
   echo "<pre>$return</pre>";
   sendMessage($return);
