@@ -26,23 +26,8 @@
   //$return = shell_exec('git pull origin master 2>&1');
   $return = shell_exec('git reset --hard HEAD && git pull origin master 2>&1');
   echo "<pre>$return</pre>";
-  //echo "<pre>$return</pre>";
-  //$output = shell_exec('git pull origin master');
-  
-  //exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMessage();
-  sendMessage($output);
-  //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
-  
-
-  //echo $message;
-  //echo "<br><br>";
-  
-  //echo "RETURN: ".$return."";
-  //echo "<br><br>";
-  
-  //echo "<pre>";
-  //echo var_dump($output);
-  //echo "</pre>";
+  sendMessage($return);
+ 
 
 //}
 ?>
