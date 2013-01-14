@@ -31,8 +31,8 @@ AddType application/x-httpd-php .html .htm .inc
 AddHandler application/x-httpd-php .html .htm .inc
 
 # serve custom error pages
-ErrorDocument 400 http://theivorysband.com
-ErrorDocument 401 http://theivorysband.com
-ErrorDocument 403 http://theivorysband.com
-ErrorDocument 404 http://theivorysband.com
-ErrorDocument 500 http://theivorysband.com
+#ErrorDocument 400 http://theivorysband.com
+#ErrorDocument 401 http://theivorysband.com
+#ErrorDocument 403 http://theivorysband.com
+#ErrorDocument 404 http://theivorysband.com
+#ErrorDocument 500 http://theivorysband.com
