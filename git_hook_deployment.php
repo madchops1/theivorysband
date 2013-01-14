@@ -33,7 +33,8 @@
   }
   
   $output = array();
-  exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMessage();
+  exec('git pull origin master',$output,$return) or sendFailureMessage();
+  //exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMessage();
   sendSuccessMessage();
   //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
   
