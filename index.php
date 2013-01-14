@@ -9,9 +9,6 @@
 		<!-- title of the page -->
 		<title>The Ivorys Official Website - TEST CHANGE 000000104</title>
 		
-		
-		<!-- test change -->
-		
 		<!-- main CSS Stylesheet -->
 		<link href="style_classic.css" rel="stylesheet" type="text/css" />
 		<link href="style_conf.css" rel="stylesheet" type="text/css" />
