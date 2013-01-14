@@ -35,7 +35,7 @@
   //$output = array();
   //exec('git pull origin master',$output,$return);
   //echo passthru('git pull origin master',$return);
-  $return = shell_exec('git pull origin master');
+  $return = shell_exec('git help');
   echo "<pre>$return</pre>";
   //$output = shell_exec('git pull origin master');
   
