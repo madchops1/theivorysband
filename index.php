@@ -8,7 +8,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
 		<!-- title of the page -->
-		<title>The Ivorys Official Website - TEST CHANGE 000000503</title>
+		<title>The Ivorys Official Website - TEST CHANGE 000000505</title>
 		
 		<!-- main CSS Stylesheet -->
 		<link href="style_classic.css" rel="stylesheet" type="text/css" />
