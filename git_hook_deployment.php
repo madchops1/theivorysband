@@ -23,9 +23,9 @@
   //$output = array();
   //exec('git pull origin master',$output,$return);
   //echo passthru('git pull origin master',$return);
-  $return = shell_exec('git pull origin master 2>&1');
-  echo "<pre>$return</pre>";
+  //$return = shell_exec('git pull origin master 2>&1');
   $return = shell_exec('git reset --hard HEAD && git pull origin master 2>&1');
+  echo "<pre>$return</pre>";
   //echo "<pre>$return</pre>";
   //$output = shell_exec('git pull origin master');
   
