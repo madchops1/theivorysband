@@ -1,6 +1,6 @@
 <?php
 //if(isset($_POST['payload'])){
-  
+  sleep(15);
   /* I have given the apache user on the server an ssh key pair for git
    * The .git directory in /ivorys1/public_html/ is chmoded to 0777 so 
    * the apache user should be able to pull from git!
