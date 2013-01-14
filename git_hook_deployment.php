@@ -32,9 +32,11 @@
     die();
   }
   
-  //$output = array();
-  //exec('git pull origin master',$output,$return);
-  $output = shell_exec('git pull origin master');
+  $output = array();
+  exec('git pull origin master',$output,$return);
+
+  //$output = shell_exec('git pull origin master');
+  
   //exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMessage();
   //sendSuccessMessage();
   //`sudo cd /home/ivorys1/public_html/ && sudo git reset --hard HEAD && sudo git pull origin master`;
@@ -43,8 +45,8 @@
   //echo $message;
   //echo "<br><br>";
   
-  //echo "RETURN: ".$return."";
-  //echo "<br><br>";
+  echo "RETURN: ".$return."";
+  echo "<br><br>";
   
   echo "<pre>";
   echo var_dump($output);
