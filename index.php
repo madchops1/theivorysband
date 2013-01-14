@@ -10,6 +10,8 @@
 		<!-- title of the page -->
 		<title>The Ivorys Official Website</title>
 		
+		<!-- Invisible Change -->
+		
 		<!-- main CSS Stylesheet -->
 		<link href="style_classic.css" rel="stylesheet" type="text/css" />
 		<link href="style_conf.css" rel="stylesheet" type="text/css" />
