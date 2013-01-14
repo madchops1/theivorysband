@@ -32,10 +32,11 @@
     die();
   }
   
-  $output = array();
+  //$output = array();
   //exec('git pull origin master',$output,$return);
-  echo passthru('git pull origin master',$return);
-  
+  //echo passthru('git pull origin master',$return);
+  $return = shell_exec('git help');
+  echo "<pre>$return</pre>";
   //$output = shell_exec('git pull origin master');
   
   //exec('cd /home/ivorys1/public_html/ && git pull origin master',$output,$return) or sendFailureMessage();
@@ -46,8 +47,8 @@
   //echo $message;
   //echo "<br><br>";
   
-  echo "RETURN: ".$return."";
-  echo "<br><br>";
+  //echo "RETURN: ".$return."";
+  //echo "<br><br>";
   
   echo "<pre>";
   echo var_dump($output);
