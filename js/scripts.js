@@ -73,7 +73,7 @@ function paused(){
 
 //create youtube player
 var player;
-function onYouTubePlayerAPIReady() {
+window.onYouTubePlayerAPIReady = function() {
 	console.log('yt ready!');
 	//delete player;
 	t = setTimeout(function(){
