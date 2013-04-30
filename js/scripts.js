@@ -94,6 +94,7 @@ function onYouTubePlayerAPIReady() {
 	        paused();
 	    };
 	},500);
+	
 }
 
 // autoplay video
