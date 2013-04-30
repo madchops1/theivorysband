@@ -66,7 +66,6 @@ function playing(){
 }
 
 function paused(){
-
 	$("#ytb-pause").fadeOut(100);
 	$("#ytb-resume").delay(100).fadeIn(100);
 }
@@ -97,19 +96,18 @@ window.onYouTubePlayerAPIReady = function() {
 	        paused();
 	    };
 	},500);
-	    ytGo = 1;
+	ytGo = 1;
 	
 }
 
 // autoplay video
-function onPlayerReady(event) {
+window.onPlayerReady = function(event) {
     event.target.playVideo();
     playing();
-    
 }
 
 // when video ends
-function onPlayerStateChange(event) {        
+window.onPlayerStateChange = function(event) {        
     if(event.data === 0) {          
         $(".video").fadeOut('slow');
         paused();
