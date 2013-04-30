@@ -14,7 +14,6 @@
 		<!-- main CSS Stylesheet -->
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		
-		
 		<!-- .JS Files -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
@@ -33,11 +32,14 @@
 	</head>
 
 	<body>
-    
-    
-    
-    
-    
+      <div>
+        <img src='images/bg.jpg' />
+        <div>
+          <ul>
+            <li><a></a></li>
+          </ul>
+        </div>
+      </div>
     </body>
     
 
