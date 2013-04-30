@@ -16,7 +16,12 @@
 	    <link href="css/zoomy.css" rel="stylesheet" type="text/css" />
 				
 		<!-- .JS Files -->
+		<!-- 
 		<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+		-->
+		<script type="text/javascript">
+		  if (!window['YT']) {var YT = {};}if (!YT.Player) {(function(){var a = document.createElement('script');a.src = 'http:' + '//s.ytimg.com/yts/jsbin/www-widgetapi-vflBZJFFk.js';a.async = true;var b = document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a, b);})();}
+		</script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/oridomi.min.js"></script>
 		<script type="text/javascript" src="js/zoomy.min.js"></script>

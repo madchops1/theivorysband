@@ -74,6 +74,7 @@ function paused(){
 //create youtube player
 var player;
 function onYouTubePlayerAPIReady() {
+	console.log('yt ready!');
 	//delete player;
 	t = setTimeout(function(){
 	    player = new YT.Player('player', {
