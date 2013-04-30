@@ -33,7 +33,7 @@
 
 	<body>
       <div>
-        <img src='images/bg.jpg' />
+        <img class='.mainimg' src='images/bg.jpg' />
         <div>
           <ul>
             <li><a></a></li>
