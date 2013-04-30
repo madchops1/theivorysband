@@ -2,6 +2,7 @@
  * Resize The Main Real Estate
  */
 itHappenedFlag = 0;
+ytGo = 0;
 function resizeContent(){
 		console.log('resizing image');
 		minHeight = 480; 				// the min height the mainwrapper can be
@@ -73,6 +74,7 @@ function paused(){
 //create youtube player
 var player;
 function onYouTubePlayerAPIReady() {
+	//delete player;
 	t = setTimeout(function(){
 	    player = new YT.Player('player', {
 	      height: '100%',
@@ -93,7 +95,8 @@ function onYouTubePlayerAPIReady() {
 	        player.pauseVideo();
 	        paused();
 	    };
-	},500);
+	},2000);
+	    ytGo = 1;
 	
 }
 
@@ -114,7 +117,10 @@ function onPlayerStateChange(event) {
 
 var photoactive = 0;
 $(document).ready(function() {
-	
+	//if(ytGo == 0){
+	//  $("iframe#player").remove();
+	//  onYouTubePlayerAPIReady();
+	//}
 	resizeContent(); // resize the content on doc ready
 	
 	$(window).resize(function(){
