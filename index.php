@@ -22,27 +22,6 @@
 		<script type="text/javascript" src="js/zoomy.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
         
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-34996752-1']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-		
-		<script language="javascript" type="text/javascript">
-        var win=null;
-        function NewWindow(mypage,myname,w,h,scroll,pos){
-        if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
-        if(pos=="center"){LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
-        else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
-        settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
-        win=window.open(mypage,myname,settings);}
-        // -->
-        </script>
 		
 		
 	</head>
@@ -148,8 +127,30 @@
     	  js = d.createElement(s); js.id = id;
     	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     	  fjs.parentNode.insertBefore(js, fjs);
-    	}(document, 'script', 'facebook-jssdk'));</script>  
-      
+    	}(document, 'script', 'facebook-jssdk'));
+      </script>  
+      <script type="text/javascript">
+    	  var _gaq = _gaq || [];
+    	  _gaq.push(['_setAccount', 'UA-34996752-1']);
+    	  _gaq.push(['_trackPageview']);
+    	  (function() {
+    	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    	  })();
+      </script>
+  	
+  	  <script language="javascript" type="text/javascript">
+        var win=null;
+        function NewWindow(mypage,myname,w,h,scroll,pos){
+        if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+        if(pos=="center"){LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+        else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
+        settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+        win=window.open(mypage,myname,settings);}
+        // -->
+      </script>
+		
     </body>
     
 
