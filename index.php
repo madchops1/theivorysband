@@ -50,9 +50,11 @@
               <li class='sharevideo'>
                 <a href="https://www.facebook.com/dialog/feed?app_id=87741124305&link=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DJONFg43WvZQ%26feature%3Dshare&display=popup&redirect_uri=https%3A%2F%2Fwww.youtube.com%2Ffacebook_redirect" onclick="NewWindow(this.href,'Share The Ivorys Video on FaceBook!','650','306','no','center');return false" onfocus="this.blur()">Share Video</a>
               </li>
+              <!-- 
               <li>
                 <div class="fb-like" data-href="http://facebook.com/TheIvorys" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
               </li>
+              -->
               <li>
                 <a href="https://twitter.com/TheIvorys" class="twitter-follow-button" data-show-count="false">Follow @TheIvorys</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -125,6 +127,7 @@
         <img src='images/billboard.jpg' class='bb-article' />
       </div>
       
+      <!-- 
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
     	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -134,6 +137,7 @@
     	  fjs.parentNode.insertBefore(js, fjs);
     	}(document, 'script', 'facebook-jssdk'));
       </script>  
+      -->
       
       <script type="text/javascript">
     	  var _gaq = _gaq || [];
