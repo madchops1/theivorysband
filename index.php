@@ -134,6 +134,7 @@
     	  fjs.parentNode.insertBefore(js, fjs);
     	}(document, 'script', 'facebook-jssdk'));
       </script>  
+      
       <script type="text/javascript">
     	  var _gaq = _gaq || [];
     	  _gaq.push(['_setAccount', 'UA-34996752-1']);
@@ -153,7 +154,6 @@
         else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
         settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
         win=window.open(mypage,myname,settings);}
-        // -->
       </script>
 		
     </body>
