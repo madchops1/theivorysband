@@ -16,9 +16,8 @@
 	    <link href="css/zoomy.css" rel="stylesheet" type="text/css" />
 				
 		<!-- .JS Files -->
-		<script src="http://www.youtube.com/player_api"></script>
-		<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+		<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/oridomi.min.js"></script>
 		<script type="text/javascript" src="js/zoomy.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
