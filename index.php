@@ -12,8 +12,7 @@ header('Access-Control-Allow-Headers: *');
 		
 		<!-- title of the page -->
 		<title>The Ivorys Official Website</title>
-		<!-- Invisible Change -->
-		<test></test>
+		
 		<!-- main CSS Stylesheet -->
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	    <link href="css/zoomy.css" rel="stylesheet" type="text/css" />
@@ -48,11 +47,11 @@ header('Access-Control-Allow-Headers: *');
               <li class='sharevideo'>
                 <a href="https://www.facebook.com/dialog/feed?app_id=87741124305&link=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DJONFg43WvZQ%26feature%3Dshare&display=popup&redirect_uri=https%3A%2F%2Fwww.youtube.com%2Ffacebook_redirect" onclick="NewWindow(this.href,'Share The Ivorys Video on FaceBook!','650','306','no','center');return false" onfocus="this.blur()">Share Video</a>
               </li>
-              <!-- 
+              
               <li>
                 <div class="fb-like" data-href="http://facebook.com/TheIvorys" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
               </li>
-              -->
+              
               <li>
                 <a href="https://twitter.com/TheIvorys" class="twitter-follow-button" data-show-count="false">Follow @TheIvorys</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -64,40 +63,11 @@ header('Access-Control-Allow-Headers: *');
             <li><a id='live' class='social' href='http://www.facebook.com/TheIvorys/events' target='_blank'>Tour</a></li>
             <li><a id='bio' class='social' href='#bio' target='_blank'>Press</a></li>
             <li><a class='social' href='mailto:theivorys@gmail.com'>Contact</a></li>
-                      
-            <!-- <li><a class='social twitter' href='http://twitter.com/theivorys' target='_blank'>Twitter</a></li> -->
-            <!--
-            <li><a class='social soundcloud' href='http://soundcloud.com/theivorys' target='_blank'>Music</a></li>
-            <li><a class='sodial instagram' href='http://instagram.com/theivoryschi' target='_blank'>Instagram</a></li>
-            <li><a class='social youtube' href='http://www.youtube.com/user/TheIvorys' target='_blank'>You Tube</a></li>
-            -->
           </ul>
-          
-          <!-- <a class='share'>Share</a> -->
-          
-          <!--  
-          <div class='social-icons' style='float:left; margin-left:20px; margin-top:2px;'>
-      		<a class='social youtube' href='http://www.youtube.com/user/TheIvorys' target='_blank'>You Tube</a>
-      		<a class='social twitter' href='http://twitter.com/theivorys' target='_blank'>Twitter</a>
-      		<a class='social facebook' href='http://www.facebook.com/TheIvorys' target='_blank'>Facebook</a>
-      		<a class='social soundcloud' href='http://soundcloud.com/theivorys' target='_blank'>Souncloud</a>
-      		<a class='social spotify' href='http://open.spotify.com/artist/6ITon1oysmGOeJekhy2SQn' target='_blank'>Spotify</a>
-  		    <a class='social myspace' href='http://www.myspace.com/theivorys' target='_blank'>MySpace</a>
-  		    <a class='social itunes' href='http://click.linksynergy.com/fs-bin/stat?id=eH8NOY8fBFE&offerid=78941&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fphobos.apple.com%252FWebObjects%252FMZStore.woa%252Fwa%252FviewAlbum%253Fid%253D564643765%2526s%253D143441%2526partnerId%253D30' target='_blank'>iTunes</a>
-    	  </div>
-          -->
         </div>
         <img class='mainimg' src='images/bg.jpg' />
         <div class='video-overlay'></div>
         <div class='video' id='player'></div>
-        
-        <!-- 
-        <div>
-          <ul>
-            <li><a></a></li>
-          </ul>
-        </div>
-        -->
         
         <iframe id='instagram-bar' src="http://widget.stagram.com/in/theivoryschi/?s=85&w=40&h=1&b=0&p=0" allowtransparency="true" frameborder="0" scrolling="no"></iframe> <!-- Webstagram - web.stagram.com -->
        
@@ -120,12 +90,13 @@ header('Access-Control-Allow-Headers: *');
       
       <iframe style='display:none;' id='soundcloud-modal' scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F5250563&amp;color=999999&amp;auto_play=false&amp;show_artwork=true"></iframe>
       <iframe style='display:none;' id='facebook-modal' src="http://www.bandrx.com/facebook/events.php?theme=zuck&page=TheIvorys&bgcolor=ffffff&textcolor=000000&linkcolor=555555&max=5" frameborder="no" scrolling="auto"></iframe>
+      
       <div style='display:none;' id='bio-modal'>
         <img src='images/billboard-logo.jpg' class='bb-logo' />
         <img src='images/billboard.jpg' class='bb-article' />
       </div>
       
-      <!-- 
+      
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
     	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -135,7 +106,7 @@ header('Access-Control-Allow-Headers: *');
     	  fjs.parentNode.insertBefore(js, fjs);
     	}(document, 'script', 'facebook-jssdk'));
       </script>  
-      -->
+     
       
   	  <script language="javascript" type="text/javascript">
         var win=null;
@@ -158,6 +129,4 @@ header('Access-Control-Allow-Headers: *');
     	  })();
       </script>
     </body>
-    
-
 </html>
