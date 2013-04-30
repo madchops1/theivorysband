@@ -10,7 +10,7 @@
 		<!-- title of the page -->
 		<title>The Ivorys Official Website</title>
 		<!-- Invisible Change -->
-		
+		<test></test>
 		<!-- main CSS Stylesheet -->
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	    <link href="css/zoomy.css" rel="stylesheet" type="text/css" />
