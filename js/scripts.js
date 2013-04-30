@@ -75,7 +75,7 @@ var player;
 window.onYouTubePlayerAPIReady = function() {
 	console.log('yt ready!');
 	//delete player;
-	t = setTimeout(function(){
+	//setTimeout(function(){
 	    player = new YT.Player('player', {
 	      height: '100%',
 	      width: '100%',
@@ -95,7 +95,8 @@ window.onYouTubePlayerAPIReady = function() {
 	        player.pauseVideo();
 	        paused();
 	    };
-	},500);
+	    
+	//},500);
 	ytGo = 1;
 	
 }
@@ -116,6 +117,7 @@ window.onPlayerStateChange = function(event) {
 
 var photoactive = 0;
 $(document).ready(function() {
+	console.log('ytgo: '+ytGo);
 	//if(ytGo == 0){
 	//  $("iframe#player").remove();
 	//  onYouTubePlayerAPIReady();

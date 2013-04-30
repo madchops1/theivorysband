@@ -24,6 +24,13 @@ SetEnv SERVER_ADMIN karl@webksd.com
  deny from all
 </Files>
 
+# xds
+#<FilesMatch "\.(ttf|otf|eot|woff)$">
+#  <IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+#  </IfModule>
+#</FilesMatch>
+
 # disable directory browsing
 Options All -Indexes
 

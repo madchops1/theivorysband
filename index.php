@@ -1,5 +1,8 @@
+<?php 
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: *');
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 		
@@ -16,16 +19,11 @@
 	    <link href="css/zoomy.css" rel="stylesheet" type="text/css" />
 				
 		<!-- .JS Files -->
-		<!-- 
-		<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
-		-->
-		<script type="text/javascript">
-		  if (!window['YT']) {var YT = {};}if (!YT.Player) {(function(){var a = document.createElement('script');a.src = 'http:' + '//s.ytimg.com/yts/jsbin/www-widgetapi-vflBZJFFk.js';a.async = true;var b = document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a, b);})();}
-		</script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/oridomi.min.js"></script>
 		<script type="text/javascript" src="js/zoomy.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="http://www.youtube.com/player_api?enablejsapi=1&version=3"></script>
         
 		
 		
@@ -139,6 +137,16 @@
       </script>  
       -->
       
+  	  <script language="javascript" type="text/javascript">
+        var win=null;
+        function NewWindow(mypage,myname,w,h,scroll,pos){
+        if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+        if(pos=="center"){LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+        else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
+        settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+        win=window.open(mypage,myname,settings);}
+      </script>
+      
       <script type="text/javascript">
     	  var _gaq = _gaq || [];
     	  _gaq.push(['_setAccount', 'UA-34996752-1']);
@@ -149,17 +157,6 @@
     	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     	  })();
       </script>
-  	
-  	  <script language="javascript" type="text/javascript">
-        var win=null;
-        function NewWindow(mypage,myname,w,h,scroll,pos){
-        if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
-        if(pos=="center"){LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
-        else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
-        settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
-        win=window.open(mypage,myname,settings);}
-      </script>
-		
     </body>
     
 
