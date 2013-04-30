@@ -96,7 +96,7 @@ function onYouTubePlayerAPIReady() {
 	        player.pauseVideo();
 	        paused();
 	    };
-	},2000);
+	},500);
 	    ytGo = 1;
 	
 }
